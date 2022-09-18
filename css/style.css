@@ -1753,17 +1753,9 @@ body::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 4.375rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-._header-scroll .body-header__container {
-  -webkit-transition: min-height 1.5s ease 0s;
-  -o-transition: min-height 1.5s ease 0s;
-  transition: min-height 1.5s ease 0s;
-  min-height: 2.5rem;
 }
 
 .body-header__logo {
@@ -2394,6 +2386,10 @@ body::after {
 
 .no-webp .main-block{
   background: url("../img/mainpage/main-block/bg.jpg") center/cover no-repeat; }
+
+.main-block {
+  padding-top: 2.5rem;
+}
 
 .main-block__body {
   display: -ms-grid;
@@ -3505,13 +3501,18 @@ body::after {
   display: none !important;
 }
 
-@media (min-width: 29.99875em) and (min-width: 101.25em) {
-  .body-header__search {
-    padding-left: 9.875rem;
-  }
-}
-
 @media (min-width: 29.99875em) {
+  .body-header__container {
+    min-height: 4.375rem;
+  }
+
+  ._header-scroll .body-header__container {
+    -webkit-transition: min-height 1.5s ease 0s;
+    -o-transition: min-height 1.5s ease 0s;
+    transition: min-height 1.5s ease 0s;
+    min-height: 2.5rem;
+  }
+
   ._header-scroll .catalog-header {
     display: none;
   }
@@ -3525,6 +3526,12 @@ body::after {
     height: 100%;
     top: 0;
     left: 0;
+  }
+}
+
+@media (min-width: 29.99875em) and (min-width: 101.25em) {
+  .body-header__search {
+    padding-left: 9.875rem;
   }
 }
 
@@ -3756,10 +3763,6 @@ body::after {
 
   .menu-footer:not(:last-child) {
     margin-bottom: 1.875rem;
-  }
-
-  .main-block {
-    padding-top: 2.5rem;
   }
 
   .main-block {
@@ -4005,10 +4008,6 @@ body::after {
 
   .menu-footer:not(:last-child) {
     margin-bottom: 1.25rem;
-  }
-
-  .main-block {
-    padding-top: 2.5rem;
   }
 
   .main-block {
@@ -4420,7 +4419,7 @@ body::after {
     font-size: 1.375rem;
   }
 
-  .phones-header__phone {
+  .phones-header__phone span {
     font-size: 1.125rem;
   }
 
@@ -4491,6 +4490,7 @@ body::after {
 
   .phones-header__phone::before {
     display: block;
+    font-size: 1.875rem;
   }
 
   .phones-header__phone span {
@@ -4506,7 +4506,7 @@ body::after {
   }
 
   .catalog-header {
-    max-height: 3.75rem;
+    max-height: 6.25rem;
   }
 
   .catalog-header {
@@ -4525,12 +4525,8 @@ body::after {
     width: 100%;
   }
 
-  .page_home {
-    padding-top: 14.375rem;
-  }
-
   .page_inner {
-    padding-top: 16.25rem;
+    padding-top: 13.75rem;
   }
 }
 
@@ -4848,18 +4844,6 @@ body::after {
 @supports not (margin-bottom: clamp( 1.25rem , 1.0961538462rem  +  0.7692307692vw , 1.875rem )) {
     .menu-footer:not(:last-child) {
       margin-bottom: calc(1.25rem + 0.625 * (100vw - 20rem) / 81.25);
-    }
-}
-
-@supports (padding-top: clamp( 2.5rem , 2.5rem  +  0vw , 2.5rem )) {
-    .main-block {
-      padding-top: clamp( 2.5rem , 2.5rem  +  0vw , 2.5rem );
-    }
-}
-
-@supports not (padding-top: clamp( 2.5rem , 2.5rem  +  0vw , 2.5rem )) {
-    .main-block {
-      padding-top: calc(2.5rem + 0 * (100vw - 20rem) / 81.25);
     }
 }
 
@@ -5263,20 +5247,20 @@ body::after {
 }
 
 @media (max-width: 61.99875em) and (min-width: 101.25em) {
-  .phones-header__phone {
+  .phones-header__phone span {
     font-size: 1.375rem;
   }
 }
 
 @media (max-width: 61.99875em) and (min-width: 20em) and (max-width: 101.25em) {
 @supports (font-size: clamp( 1.125rem , 1.0634615385rem  +  0.3076923077vw , 1.375rem )) {
-    .phones-header__phone {
+    .phones-header__phone span {
       font-size: clamp( 1.125rem , 1.0634615385rem  +  0.3076923077vw , 1.375rem );
     }
 }
 
 @supports not (font-size: clamp( 1.125rem , 1.0634615385rem  +  0.3076923077vw , 1.375rem )) {
-    .phones-header__phone {
+    .phones-header__phone span {
       font-size: calc(1.125rem + 0.25 * (100vw - 20rem) / 81.25);
     }
 }
