@@ -11,7 +11,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20220919012945">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220922203346">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -227,7 +227,7 @@
 							<button type="button" class="filter-catalog__title ">Фільтр товарів</button>
 							<div data-spollers class="filter-catalog__items">
 								<div class="filter-catalog__price price-filter">
-									<button type="button" data-spoller class="price-filter__title _icon-spoller-arrow">Ціна</button>
+									<button type="button" data-spoller class="price-filter__title _icon-spoller-arrow _spoller-active">Ціна</button>
 									<div data-range class="price-filter__body">
 										<div class="price-filter__inputs">
 											<input data-range-from="0" autocomplete="off" type="text" value="10000" name="form[]" class="price-filter__input">
@@ -237,7 +237,7 @@
 									</div>
 								</div>
 								<div class="filter-catalog__item item-filter-catalog">
-									<button type="button" data-spoller class="item-filter-catalog__title _icon-spoller-arrow">Виробництво</button>
+									<button data-spoller type="button" class="item-filter-catalog__title _icon-spoller-arrow _spoller-active">Виробництво</button>
 									<div class="item-filter-catalog__body">
 										<div class="item-filter-catalog_checkbox checkbox">
 											<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
@@ -278,7 +278,7 @@
 									</div>
 								</div>
 								<div class="filter-catalog__item item-filter-catalog">
-									<button type="button" data-spoller class="item-filter-catalog__title _icon-spoller-arrow">Матеріал руків'я</button>
+									<button type="button" data-spoller class="item-filter-catalog__title _icon-spoller-arrow _spoller-active">Матеріал руків'я</button>
 									<div class="item-filter-catalog__body">
 										<div class="item-filter-catalog_checkbox checkbox">
 											<input id="c_10" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
@@ -319,7 +319,7 @@
 									</div>
 								</div>
 								<div class="filter-catalog__item item-filter-catalog">
-									<button type="button" data-spoller class="item-filter-catalog__title _icon-spoller-arrow">Матеріал клинка</button>
+									<button type="button" data-spoller class="item-filter-catalog__title _icon-spoller-arrow _spoller-active">Матеріал клинка</button>
 									<div class="item-filter-catalog__body">
 										<div class="item-filter-catalog_checkbox checkbox">
 											<input id="c_19" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
@@ -357,6 +357,12 @@
 											<input id="c_27" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
 											<label for="c_27" class="checkbox__label"><span class="checkbox__text">Opinel<small> (46)</small></span></label>
 										</div>
+									</div>
+								</div>
+								<div class="filter-catalog__item item-filter-catalog">
+									<button type="button" data-spoller class="item-filter-catalog__title _icon-spoller-arrow _spoller-active">Сортувати обране</button>
+									<div class="item-filter-catalog__body">
+										<button type="submit" class="button button_sort">Сортувати</button>
 									</div>
 								</div>
 							</div>
@@ -1138,7 +1144,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220919012945"></script>
+	<script src="js/app.min.js?_v=20220922203346"></script>
 </body>
 
 </html>

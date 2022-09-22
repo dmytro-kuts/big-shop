@@ -259,6 +259,10 @@ body {
   background-color: #000000;
 }
 
+.button_sort {
+  width: 100%;
+}
+
 .checkbox {
   position: relative;
 }
