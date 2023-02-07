@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="ua">
+	@@include('html/_head.htm',{
+	"title":"Каталог"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page page_inner">
+                <div class="page__header">
+                    <div class="page__container">
+                        <h1 class="page__title title">Ножі та ліхтарі</h1>
+                        <nav class="breadcrumbs">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__item">
+                                    <a href="./" class="breadcrumbs__link">Головна</a>
+                                </li>
+                                <li class="breadcrumbs__item">
+                                    <span href="./catalog" class="breadcrumbs__current">Ножі та ліхтарі</span>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+				<div class="catalog">
+                    <div class="catalog__container">
+                        <div  class="catalog__body">
+                            <div class="catalog__filter filter-catalog">
+                                <button type="button" class="filter-catalog__title ">Фільтр товарів</button>
+                                <div data-spollers class="filter-catalog__items">
+                                    <div class="filter-catalog__price price-filter">
+                                        <button type="button" data-spoller class="price-filter__title _icon-spoller-arrow _spoller-active">Ціна</button>
+                                        <div data-range class="price-filter__body">
+                                            <div class="price-filter__inputs">
+                                                <input data-range-from="0" autocomplete="off" type="text" value="10000" name="form[]" class="price-filter__input">
+                                                <input data-range-to="50000" autocomplete="off" type="text" value="30000" name="form[]" class="price-filter__input">
+                                            </div>
+                                            <div data-range-item class="price-filter__range"></div>
+                                        </div>
+                                    </div>
+                                    <div  class="filter-catalog__item item-filter-catalog">
+                                        <button data-spoller type="button" class="item-filter-catalog__title _icon-spoller-arrow _spoller-active">Виробництво</button>
+                                        <div class="item-filter-catalog__body">
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_1" class="checkbox__label"><span class="checkbox__text">Firebird<small> (51)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_2" class="checkbox__label"><span class="checkbox__text">Morakniv<small> (23)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_3" class="checkbox__label"><span class="checkbox__text">Boker Magnum<small> (45)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_4" class="checkbox__label"><span class="checkbox__text">Olight Odin<small> (81)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_5" class="checkbox__label"><span class="checkbox__text">Ontario Rat Folder<small> (10)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_6" class="checkbox__label"><span class="checkbox__text">Fenix<small> (35)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_7" class="checkbox__label"><span class="checkbox__text">Spyderco Stovepipe<small> (47)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_8" class="checkbox__label"><span class="checkbox__text">Ontario Rat<small> (29)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_9" class="checkbox__label"><span class="checkbox__text">Opinel<small> (46)</small></span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-catalog__item item-filter-catalog">
+                                        <button type="button" data-spoller class="item-filter-catalog__title _icon-spoller-arrow _spoller-active">Матеріал руків'я</button>
+                                        <div class="item-filter-catalog__body">
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_10" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_10" class="checkbox__label"><span class="checkbox__text">2-х кольорова микарта<small> (51)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_11" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_11" class="checkbox__label"><span class="checkbox__text">6061 Aluminum<small> (23)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_12" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_12" class="checkbox__label"><span class="checkbox__text">6AI4V titanium<small> (45)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_13" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_13" class="checkbox__label"><span class="checkbox__text">Black G-10<small> (81)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_14" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_14" class="checkbox__label"><span class="checkbox__text">Ontario Rat Folder<small> (10)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_15" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_15" class="checkbox__label"><span class="checkbox__text">Black G-10<small> (35)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_16" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_16" class="checkbox__label"><span class="checkbox__text">BlackWash / Satin Finish<small> (47)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_17" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_17" class="checkbox__label"><span class="checkbox__text">Dymondwood<small> (29)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_18" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_18" class="checkbox__label"><span class="checkbox__text">Opinel<small> (46)</small></span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-catalog__item item-filter-catalog">
+                                        <button type="button" data-spoller class="item-filter-catalog__title _icon-spoller-arrow _spoller-active">Матеріал клинка</button>
+                                        <div class="item-filter-catalog__body">
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_19" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_19" class="checkbox__label"><span class="checkbox__text">1.4116 Bestar<small> (51)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_20" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_20" class="checkbox__label"><span class="checkbox__text">Morakniv<small> (23)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_21" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_21" class="checkbox__label"><span class="checkbox__text">154 СМ с покрытием DLC<small> (45)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_22" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_22" class="checkbox__label"><span class="checkbox__text">440A нержавіюча стальn<small> (81)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_23" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_23" class="checkbox__label"><span class="checkbox__text">Ontario Rat Folder<small> (10)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_24" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_24" class="checkbox__label"><span class="checkbox__text">v440A нержавіюча сталь<small> (35)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_25" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_25" class="checkbox__label"><span class="checkbox__text">7Cr13MoVe<small> (47)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_26" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_26" class="checkbox__label"><span class="checkbox__text">OAR-RPM9<small> (29)</small></span></label>
+                                            </div>
+                                            <div class="item-filter-catalog_checkbox checkbox">
+                                                <input id="c_27" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_27" class="checkbox__label"><span class="checkbox__text">Opinel<small> (46)</small></span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-catalog__item item-filter-catalog">
+                                        <button type="button" data-spoller class="item-filter-catalog__title _icon-spoller-arrow _spoller-active">Сортувати обране</button>
+                                        <div class="item-filter-catalog__body">
+                                            <button type="submit" class="button button_sort">Сортувати</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__control">
+                                    <select name="form[]" data-class-modif="control">
+                                        <option value="1" selected>За популярністю</option>
+                                        <option value="2">Від дешевих до дорогих</option>
+                                        <option value="3">Від дорогих до дешевих</option>
+                                        <option value="4">Новинки</option>
+                                        <option value="4">Акційні</option>
+                                        <option value="4">За рейтингом</option>
+                                    </select>
+                                </div>
+                                <div class="catalog__products">
+                                    <article class="products-card">
+                                        <a href="./product-01" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card/image-01.jpg" alt="Image">
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="./product-01" class="products-card__link-title">Ніж Firebird</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">87х18</div>
+                                                <div class="info-products-card__materials">Satin Finish</div>
+                                            </div>
+                                            <div class="products-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 відгуків</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">1690 грн.</div>
+                                                <a href="" class="products-card__compare _icon-compare"></a>
+                                                <a href="" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В кошик</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="./product-02" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card/image-02.jpg" alt="Image">
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="./product-02" class="products-card__link-title">Morakniv Companion</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">102х18</div>
+                                                <div class="info-products-card__materials">нержавіюча сталь</div>
+                                            </div>
+                                            <div class="products-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">4.4</div>
+                                                <div class="rating__info">18 відгуків</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">593 грн.</div>
+                                                <a href="#" class="products-card__compare _icon-compare"></a>
+                                                <a href="#" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В кошик</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="./product-03" class="products-card__image">
+                                            <div class="products-card__sale">-50%</div>
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card/image-03.jpg" alt="Image">
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="./product-03" class="products-card__link-title">Ніж Boker Magnum</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">160х14</div>
+                                                <div class="info-products-card__materials">натуральний кап</div>
+                                            </div>
+                                            <div class="products-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.1</div>
+                                                <div class="rating__info">86 відгуків</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price"><span>987</span> 493 грн.</div>
+                                                <a href="#" class="products-card__compare _icon-compare"></a>
+                                                <a href="#" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В кошик</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="./product-50" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card/image-50.jpg" alt="Image">
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="./product-50" class="products-card__link-title">Ліхтар Olight Odin</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">235х18</div>
+                                                <div class="info-products-card__materials">Китай</div>
+                                            </div>
+                                            <div class="products-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">4.1</div>
+                                                <div class="rating__info">20 відгуків</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">8144 грн.</div>
+                                                <a href="#" class="products-card__compare _icon-compare"></a>
+                                                <a href="#" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В кошик</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="./product-04" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card/image-04.jpg" alt="Image">
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="./product-04" class="products-card__link-title">Ніж Ontario Rat Folder</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">219х22</div>
+                                                <div class="info-products-card__materials">композит</div>
+                                            </div>
+                                            <div class="products-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">4.5</div>
+                                                <div class="rating__info">124 відгуків</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">2800 грн.</div>
+                                                <a href="#" class="products-card__compare _icon-compare"></a>
+                                                <a href="#" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В кошик</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="./product-52" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card/image-52.jpg" alt="Image">
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="./product-52" class="products-card__link-title">Ліхтар Fenix TK35UE</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">235х18</div>
+                                                <div class="info-products-card__materials">Авіаційний алюміній</div>
+                                            </div>
+                                            <div class="products-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">4.1</div>
+                                                <div class="rating__info">20 відгуків</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">6109 грн.</div>
+                                                <a href="" class="products-card__compare _icon-compare"></a>
+                                                <a href="" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В кошик</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="./product-05" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card/image-05.jpg" alt="Image">
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="./product-05" class="products-card__link-title">Ніж Spyderco Stovepipe</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">171х12</div>
+                                                <div class="info-products-card__materials">Титан</div>
+                                            </div>
+                                            <div class="products-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">4.2</div>
+                                                <div class="rating__info">48 відгуків</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">20924 грн.</div>
+                                                <a href="#" class="products-card__compare _icon-compare"></a>
+                                                <a href="#" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В кошик</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="./product-06" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card/image-06.jpg" alt="Image">
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="./product-06" class="products-card__link-title">Ніж Spyderco Delica 4</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">181х14</div>
+                                                <div class="info-products-card__materials">нержавіюча сталь</div>
+                                            </div>
+                                            <div class="products-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.5</div>
+                                                <div class="rating__info">88 відгуків</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">6439 грн.</div>
+                                                <a href="#" class="products-card__compare _icon-compare"></a>
+                                                <a href="#" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В кошик</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="./product-51" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card/image-51.jpg" alt="Image">
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="./product-51" class="products-card__link-title">Ліхтар Fenix HP30R</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">102х18</div>
+                                                <div class="info-products-card__materials">Авіаційний алюміній</div>
+                                            </div>
+                                            <div class="products-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">4.4</div>
+                                                <div class="rating__info">18 відгуків</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">10536 грн.</div>
+                                                <a href="#" class="products-card__compare _icon-compare"></a>
+                                                <a href="#" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В кошик</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="./product-07" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card/image-07.jpg" alt="Image">
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="./product-07" class="products-card__link-title">Ніж Morakniv Kansbol</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">181х14</div>
+                                                <div class="info-products-card__materials">нержавіюча сталь</div>
+                                            </div>
+                                            <div class="products-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.5</div>
+                                                <div class="rating__info">88 відгуків</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">2450 грн.</div>
+                                                <a href="#" class="products-card__compare _icon-compare"></a>
+                                                <a href="#" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В кошик</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="./product-08" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card/image-08.jpg" alt="Image">
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="./product-08" class="products-card__link-title">Ніж Spyderco Endura</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">231х16</div>
+                                                <div class="info-products-card__materials">FRN</div>
+                                            </div>
+                                            <div class="products-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.1</div>
+                                                <div class="rating__info">20 відгуків</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">4775 грн.</div>
+                                                <a href="#" class="products-card__compare _icon-compare"></a>
+                                                <a href="#" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В кошик</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="./product-10" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card/image-10.jpg" alt="Image">
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="./product-10" class="products-card__link-title">Ніж Opinel</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">219х22</div>
+                                                <div class="info-products-card__materials">Нержавеющая сталь</div>
+                                            </div>
+                                            <div class="products-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">4.5</div>
+                                                <div class="rating__info">124 відгуків</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">598 грн.</div>
+                                                <a href="#" class="products-card__compare _icon-compare"></a>
+                                                <a href="#" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В кошик</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="./product-53" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card/image-53.jpg" alt="Image">
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="./product-53" class="products-card__link-title">Ліхтар Fenix LR80R</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">219х22</div>
+                                                <div class="info-products-card__materials">Авіаційний алюміній</div>
+                                            </div>
+                                            <div class="products-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">4.5</div>
+                                                <div class="rating__info">124 відгуків</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">19732 грн.</div>
+                                                <a href="#" class="products-card__compare _icon-compare"></a>
+                                                <a href="#" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В кошик</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="./product-54" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card/image-54.jpg" alt="Image">
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="./product-54" class="products-card__link-title">Ліхтар Olight X9R</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">171х12</div>
+                                                <div class="info-products-card__materials">Титан</div>
+                                            </div>
+                                            <div class="products-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">4.2</div>
+                                                <div class="rating__info">48 відгуків</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">30410 грн.</div>
+                                                <a href="#" class="products-card__compare _icon-compare"></a>
+                                                <a href="#" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В кошик</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="./product-09" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card/image-09.jpg" alt="Image">
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="./product-09" class="products-card__link-title">Ніж Ontario Rat</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">235х18</div>
+                                                <div class="info-products-card__materials">композит</div>
+                                            </div>
+                                            <div class="products-card__rating rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">4.1</div>
+                                                <div class="rating__info">20 відгуків</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">2800 грн.</div>
+                                                <a href="#" class="products-card__compare _icon-compare"></a>
+                                                <a href="#" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В кошик</span></button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="catalog__footer">
+                                    <a href="./catalog" class="catalog__more button button_border">Показати більше</a>
+                                    <div class="catalog__pagging pagging">
+                                        <button disabled type="submit" class="pagging__arrow pagging__arrow_left _icon-arrow-bottom"></button>
+                                        <ul class="pagging__list">
+                                            <li class="pagging__item"><a href="" class="pagging__link _active">1</a></li>
+                                            <li class="pagging__item"><a href="" class="pagging__link">2</a></li>
+                                            <li class="pagging__item"><a href="" class="pagging__link">3</a></li>
+                                            <li class="pagging__item"><a href="" class="pagging__link">...</a></li>
+                                            <li class="pagging__item"><a href="" class="pagging__link">15</a></li>
+                                        </ul>
+                                        <button type="submit" class="pagging__arrow pagging__arrow_right _icon-arrow-bottom"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
