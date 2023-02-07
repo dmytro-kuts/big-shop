@@ -8702,7 +8702,7 @@
                 speed: 800,
                 loop: true,
                 autoplay: {
-                    delay: 3e3,
+                    delay: 4e3,
                     disableOnInteraction: false
                 },
                 pagination: {
@@ -8731,7 +8731,7 @@
                 speed: 800,
                 loop: true,
                 autoplay: {
-                    delay: 3e3,
+                    delay: 4e3,
                     disableOnInteraction: false
                 },
                 pagination: {
@@ -8768,7 +8768,7 @@
                 speed: 800,
                 loop: true,
                 autoplay: {
-                    delay: 3e3,
+                    delay: 4e3,
                     disableOnInteraction: false
                 },
                 pagination: {
